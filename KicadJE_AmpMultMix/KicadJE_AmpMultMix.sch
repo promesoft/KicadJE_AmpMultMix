@@ -1,0 +1,416 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:TL082 U?
+U 1 1 5C85365C
+P 4550 3700
+F 0 "U?" H 4550 3333 50  0000 C CNN
+F 1 "TL082" H 4550 3424 50  0000 C CNN
+F 2 "" H 4550 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4550 3700 50  0001 C CNN
+	1    4550 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL082 U?
+U 2 1 5C853697
+P 4550 4950
+F 0 "U?" H 4550 4583 50  0000 C CNN
+F 1 "TL082" H 4550 4674 50  0000 C CNN
+F 2 "" H 4550 4950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4550 4950 50  0001 C CNN
+	2    4550 4950
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL082 U?
+U 3 1 5C8536E4
+P 1800 2100
+F 0 "U?" H 1758 2146 50  0000 L CNN
+F 1 "TL082" H 1758 2055 50  0000 L CNN
+F 2 "" H 1800 2100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 1800 2100 50  0001 C CNN
+	3    1800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C8537B7
+P 3750 3600
+F 0 "R?" V 3543 3600 50  0000 C CNN
+F 1 "20k" V 3634 3600 50  0000 C CNN
+F 2 "" V 3680 3600 50  0001 C CNN
+F 3 "~" H 3750 3600 50  0001 C CNN
+	1    3750 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5C853839
+P 4100 5150
+F 0 "#PWR?" H 4100 4900 50  0001 C CNN
+F 1 "GND" H 4105 4977 50  0000 C CNN
+F 2 "" H 4100 5150 50  0001 C CNN
+F 3 "" H 4100 5150 50  0001 C CNN
+	1    4100 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 5150 4100 5050
+Wire Wire Line
+	4100 5050 4250 5050
+Wire Wire Line
+	3900 3600 4100 3600
+$Comp
+L Device:R R?
+U 1 1 5C8538E7
+P 4300 4450
+F 0 "R?" V 4093 4450 50  0000 C CNN
+F 1 "20k" V 4184 4450 50  0000 C CNN
+F 2 "" V 4230 4450 50  0001 C CNN
+F 3 "~" H 4300 4450 50  0001 C CNN
+	1    4300 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_Dual_Separate RV?
+U 2 1 5C853971
+P 4850 4450
+F 0 "RV?" V 4643 4450 50  0000 C CNN
+F 1 "R_POT_Dual_Separate" V 4734 4450 50  0000 C CNN
+F 2 "" H 4850 4450 50  0001 C CNN
+F 3 "~" H 4850 4450 50  0001 C CNN
+	2    4850 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT_Dual_Separate RV?
+U 1 1 5C8539B5
+P 4600 3000
+F 0 "RV?" V 4393 3000 50  0000 C CNN
+F 1 "R_POT_Dual_Separate" V 4484 3000 50  0000 C CNN
+F 2 "" H 4600 3000 50  0001 C CNN
+F 3 "~" H 4600 3000 50  0001 C CNN
+	1    4600 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 4450 4150 4850
+Connection ~ 4150 4850
+Wire Wire Line
+	4150 4850 4250 4850
+Wire Wire Line
+	4450 4450 4700 4450
+Wire Wire Line
+	4850 4600 5000 4600
+Wire Wire Line
+	5000 4600 5000 4450
+Wire Wire Line
+	4850 4950 5000 4950
+Wire Wire Line
+	5000 4950 5000 4600
+Connection ~ 5000 4600
+Wire Wire Line
+	4450 3000 4100 3000
+Wire Wire Line
+	4100 3000 4100 3600
+Connection ~ 4100 3600
+Wire Wire Line
+	4100 3600 4250 3600
+Wire Wire Line
+	4600 3150 4750 3150
+Wire Wire Line
+	4750 3150 4750 3000
+Wire Wire Line
+	4750 3000 4950 3000
+Wire Wire Line
+	4950 3000 4950 3700
+Wire Wire Line
+	4950 3700 4850 3700
+Connection ~ 4750 3000
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5C85424F
+P 3500 3600
+F 0 "#PWR?" H 3500 3350 50  0001 C CNN
+F 1 "GND" H 3505 3427 50  0000 C CNN
+F 2 "" H 3500 3600 50  0001 C CNN
+F 3 "" H 3500 3600 50  0001 C CNN
+	1    3500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3600 3600 3600
+$Comp
+L Device:R R?
+U 1 1 5C85440A
+P 1350 3000
+F 0 "R?" V 1143 3000 50  0000 C CNN
+F 1 "47k" V 1234 3000 50  0000 C CNN
+F 2 "" V 1280 3000 50  0001 C CNN
+F 3 "~" H 1350 3000 50  0001 C CNN
+	1    1350 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C8544A2
+P 1350 3400
+F 0 "R?" V 1143 3400 50  0000 C CNN
+F 1 "47k" V 1234 3400 50  0000 C CNN
+F 2 "" V 1280 3400 50  0001 C CNN
+F 3 "~" H 1350 3400 50  0001 C CNN
+	1    1350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5C85455C
+P 750 3000
+F 0 "J?" H 780 3325 50  0000 C CNN
+F 1 "In1" H 550 3050 50  0000 C CNN
+F 2 "" H 750 3000 50  0001 C CNN
+F 3 "~" H 750 3000 50  0001 C CNN
+	1    750  3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5C8545CC
+P 750 3400
+F 0 "J?" H 780 3725 50  0000 C CNN
+F 1 "In2" H 550 3500 50  0000 C CNN
+F 2 "" H 750 3400 50  0001 C CNN
+F 3 "~" H 750 3400 50  0001 C CNN
+	1    750  3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  3000 1200 3000
+Wire Wire Line
+	950  3400 1200 3400
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5C854A65
+P 1100 4150
+F 0 "#PWR?" H 1100 3900 50  0001 C CNN
+F 1 "GND" H 1105 3977 50  0000 C CNN
+F 2 "" H 1100 4150 50  0001 C CNN
+F 3 "" H 1100 4150 50  0001 C CNN
+	1    1100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C854ABA
+P 1350 3800
+F 0 "R?" V 1143 3800 50  0000 C CNN
+F 1 "4k7" V 1234 3800 50  0000 C CNN
+F 2 "" V 1280 3800 50  0001 C CNN
+F 3 "~" H 1350 3800 50  0001 C CNN
+	1    1350 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5C854AC0
+P 750 3800
+F 0 "J?" H 780 4125 50  0000 C CNN
+F 1 "Out1" H 500 3850 50  0000 C CNN
+F 2 "" H 750 3800 50  0001 C CNN
+F 3 "~" H 750 3800 50  0001 C CNN
+	1    750  3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  3800 1200 3800
+Wire Wire Line
+	950  3900 1100 3900
+Wire Wire Line
+	1100 3900 1100 4150
+Wire Wire Line
+	1100 3900 1100 3500
+Wire Wire Line
+	1100 3300 950  3300
+Connection ~ 1100 3900
+Wire Wire Line
+	1100 3300 1100 3100
+Wire Wire Line
+	1100 2900 950  2900
+Connection ~ 1100 3300
+Wire Wire Line
+	950  3100 1100 3100
+Connection ~ 1100 3100
+Wire Wire Line
+	1100 3100 1100 2900
+Wire Wire Line
+	950  3500 1100 3500
+Connection ~ 1100 3500
+Wire Wire Line
+	1100 3500 1100 3300
+Text GLabel 1800 3800 2    50   Input ~ 0
+OutNonInv
+Text GLabel 1800 3400 2    50   Input ~ 0
+InNonInv
+Wire Wire Line
+	1500 3400 1600 3400
+Wire Wire Line
+	1600 3400 1600 3000
+Wire Wire Line
+	1600 3000 1500 3000
+Connection ~ 1600 3400
+Wire Wire Line
+	1600 3400 1800 3400
+Wire Wire Line
+	1500 3800 1800 3800
+Text GLabel 4100 3800 0    50   Input ~ 0
+InNonInv
+Wire Wire Line
+	4100 3800 4250 3800
+Text GLabel 5200 3700 2    50   Input ~ 0
+OutNonInv
+Wire Wire Line
+	4950 3700 5200 3700
+Connection ~ 4950 3700
+$Comp
+L Device:R R?
+U 1 1 5C85897D
+P 1350 5150
+F 0 "R?" V 1143 5150 50  0000 C CNN
+F 1 "4k7" V 1234 5150 50  0000 C CNN
+F 2 "" V 1280 5150 50  0001 C CNN
+F 3 "~" H 1350 5150 50  0001 C CNN
+	1    1350 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5C858983
+P 750 4750
+F 0 "J?" H 780 5075 50  0000 C CNN
+F 1 "In1" H 550 4800 50  0000 C CNN
+F 2 "" H 750 4750 50  0001 C CNN
+F 3 "~" H 750 4750 50  0001 C CNN
+	1    750  4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5C858989
+P 750 5150
+F 0 "J?" H 780 5475 50  0000 C CNN
+F 1 "In2" H 550 5250 50  0000 C CNN
+F 2 "" H 750 5150 50  0001 C CNN
+F 3 "~" H 750 5150 50  0001 C CNN
+	1    750  5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  4750 1200 4750
+Wire Wire Line
+	950  5150 1200 5150
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5C858991
+P 1100 5900
+F 0 "#PWR?" H 1100 5650 50  0001 C CNN
+F 1 "GND" H 1105 5727 50  0000 C CNN
+F 2 "" H 1100 5900 50  0001 C CNN
+F 3 "" H 1100 5900 50  0001 C CNN
+	1    1100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C858997
+P 1350 5550
+F 0 "R?" V 1143 5550 50  0000 C CNN
+F 1 "4k7" V 1234 5550 50  0000 C CNN
+F 2 "" V 1280 5550 50  0001 C CNN
+F 3 "~" H 1350 5550 50  0001 C CNN
+	1    1350 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5C85899D
+P 750 5550
+F 0 "J?" H 780 5875 50  0000 C CNN
+F 1 "Out1" H 500 5600 50  0000 C CNN
+F 2 "" H 750 5550 50  0001 C CNN
+F 3 "~" H 750 5550 50  0001 C CNN
+	1    750  5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  5550 1200 5550
+Wire Wire Line
+	950  5650 1100 5650
+Wire Wire Line
+	1100 5650 1100 5900
+Wire Wire Line
+	1100 5650 1100 5250
+Wire Wire Line
+	1100 5050 950  5050
+Connection ~ 1100 5650
+Wire Wire Line
+	1100 5050 1100 4850
+Wire Wire Line
+	1100 4650 950  4650
+Connection ~ 1100 5050
+Wire Wire Line
+	950  4850 1100 4850
+Connection ~ 1100 4850
+Wire Wire Line
+	1100 4850 1100 4650
+Wire Wire Line
+	950  5250 1100 5250
+Connection ~ 1100 5250
+Wire Wire Line
+	1100 5250 1100 5050
+Text GLabel 1800 5550 2    50   Input ~ 0
+OutInv
+Text GLabel 1850 4750 2    50   Input ~ 0
+InInv
+Wire Wire Line
+	1500 5150 1600 5150
+Wire Wire Line
+	1500 5550 1600 5550
+Wire Wire Line
+	1500 4750 1850 4750
+Wire Wire Line
+	1600 5150 1600 5550
+Connection ~ 1600 5550
+Wire Wire Line
+	1600 5550 1800 5550
+$Comp
+L Device:R R?
+U 1 1 5C858977
+P 1350 4750
+F 0 "R?" V 1143 4750 50  0000 C CNN
+F 1 "20k" V 1234 4750 50  0000 C CNN
+F 2 "" V 1280 4750 50  0001 C CNN
+F 3 "~" H 1350 4750 50  0001 C CNN
+	1    1350 4750
+	0    1    1    0   
+$EndComp
+Text GLabel 3750 4850 0    50   Input ~ 0
+InInv
+Wire Wire Line
+	3750 4850 4150 4850
+Text GLabel 5000 4950 2    50   Input ~ 0
+OutInv
+$EndSCHEMATC
