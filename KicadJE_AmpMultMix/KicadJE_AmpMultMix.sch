@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:KicadJE_AmpMultMix-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -16,12 +17,12 @@ $EndDescr
 $Comp
 L Amplifier_Operational:TL082 U?
 U 1 1 5C85365C
-P 4550 3700
-F 0 "U?" H 4550 3333 50  0000 C CNN
-F 1 "TL082" H 4550 3424 50  0000 C CNN
-F 2 "" H 4550 3700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4550 3700 50  0001 C CNN
-	1    4550 3700
+P 4850 3050
+F 0 "U?" H 4850 2683 50  0000 C CNN
+F 1 "TL082" H 4850 2774 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm" H 4850 3050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 4850 3050 50  0001 C CNN
+	1    4850 3050
 	1    0    0    1   
 $EndComp
 $Comp
@@ -48,63 +49,13 @@ F 3 "http://www.ti.com/lit/ds/symlink/tl081.pdf" H 1800 2100 50  0001 C CNN
 $EndComp
 $Comp
 L Device:R R?
-U 1 1 5C8537B7
-P 3750 3600
-F 0 "R?" V 3543 3600 50  0000 C CNN
-F 1 "20k" V 3634 3600 50  0000 C CNN
-F 2 "" V 3680 3600 50  0001 C CNN
-F 3 "~" H 3750 3600 50  0001 C CNN
-	1    3750 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
-U 1 1 5C853839
-P 4100 5150
-F 0 "#PWR?" H 4100 4900 50  0001 C CNN
-F 1 "GND" H 4105 4977 50  0000 C CNN
-F 2 "" H 4100 5150 50  0001 C CNN
-F 3 "" H 4100 5150 50  0001 C CNN
-	1    4100 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4100 5150 4100 5050
-Wire Wire Line
-	4100 5050 4250 5050
-Wire Wire Line
-	3900 3600 4100 3600
-$Comp
-L Device:R R?
 U 1 1 5C8538E7
-P 4300 4450
-F 0 "R?" V 4093 4450 50  0000 C CNN
-F 1 "20k" V 4184 4450 50  0000 C CNN
-F 2 "" V 4230 4450 50  0001 C CNN
-F 3 "~" H 4300 4450 50  0001 C CNN
-	1    4300 4450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_POT_Dual_Separate RV?
-U 2 1 5C853971
-P 4850 4450
-F 0 "RV?" V 4643 4450 50  0000 C CNN
-F 1 "R_POT_Dual_Separate" V 4734 4450 50  0000 C CNN
-F 2 "" H 4850 4450 50  0001 C CNN
-F 3 "~" H 4850 4450 50  0001 C CNN
-	2    4850 4450
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_POT_Dual_Separate RV?
-U 1 1 5C8539B5
-P 4600 3000
-F 0 "RV?" V 4393 3000 50  0000 C CNN
-F 1 "R_POT_Dual_Separate" V 4484 3000 50  0000 C CNN
-F 2 "" H 4600 3000 50  0001 C CNN
-F 3 "~" H 4600 3000 50  0001 C CNN
-	1    4600 3000
+P 4550 4450
+F 0 "R?" V 4343 4450 50  0000 C CNN
+F 1 "20k" V 4434 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4480 4450 50  0001 C CNN
+F 3 "~" H 4550 4450 50  0001 C CNN
+	1    4550 4450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -113,95 +64,68 @@ Connection ~ 4150 4850
 Wire Wire Line
 	4150 4850 4250 4850
 Wire Wire Line
-	4450 4450 4700 4450
-Wire Wire Line
-	4850 4600 5000 4600
-Wire Wire Line
-	5000 4600 5000 4450
-Wire Wire Line
-	4850 4950 5000 4950
-Wire Wire Line
-	5000 4950 5000 4600
-Connection ~ 5000 4600
-Wire Wire Line
-	4450 3000 4100 3000
-Wire Wire Line
-	4100 3000 4100 3600
-Connection ~ 4100 3600
-Wire Wire Line
-	4100 3600 4250 3600
-Wire Wire Line
-	4600 3150 4750 3150
-Wire Wire Line
-	4750 3150 4750 3000
-Wire Wire Line
-	4750 3000 4950 3000
-Wire Wire Line
-	4950 3000 4950 3700
-Wire Wire Line
-	4950 3700 4850 3700
-Connection ~ 4750 3000
+	4700 4450 4950 4450
 $Comp
 L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
 U 1 1 5C85424F
-P 3500 3600
-F 0 "#PWR?" H 3500 3350 50  0001 C CNN
-F 1 "GND" H 3505 3427 50  0000 C CNN
-F 2 "" H 3500 3600 50  0001 C CNN
-F 3 "" H 3500 3600 50  0001 C CNN
-	1    3500 3600
+P 3450 2400
+F 0 "#PWR?" H 3450 2150 50  0001 C CNN
+F 1 "GND" H 3455 2227 50  0000 C CNN
+F 2 "" H 3450 2400 50  0001 C CNN
+F 3 "" H 3450 2400 50  0001 C CNN
+	1    3450 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 3600 3600 3600
+	3450 2400 3550 2400
 $Comp
 L Device:R R?
 U 1 1 5C85440A
-P 1350 3000
-F 0 "R?" V 1143 3000 50  0000 C CNN
-F 1 "47k" V 1234 3000 50  0000 C CNN
-F 2 "" V 1280 3000 50  0001 C CNN
-F 3 "~" H 1350 3000 50  0001 C CNN
-	1    1350 3000
+P 1350 2500
+F 0 "R?" V 1143 2500 50  0000 C CNN
+F 1 "47k" V 1234 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1280 2500 50  0001 C CNN
+F 3 "~" H 1350 2500 50  0001 C CNN
+	1    1350 2500
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C8544A2
-P 1350 3400
-F 0 "R?" V 1143 3400 50  0000 C CNN
-F 1 "47k" V 1234 3400 50  0000 C CNN
-F 2 "" V 1280 3400 50  0001 C CNN
-F 3 "~" H 1350 3400 50  0001 C CNN
-	1    1350 3400
+P 1350 2900
+F 0 "R?" V 1143 2900 50  0000 C CNN
+F 1 "47k" V 1234 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1280 2900 50  0001 C CNN
+F 3 "~" H 1350 2900 50  0001 C CNN
+	1    1350 2900
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector:AudioJack2_SwitchT J?
 U 1 1 5C85455C
-P 750 3000
-F 0 "J?" H 780 3325 50  0000 C CNN
-F 1 "In1" H 550 3050 50  0000 C CNN
-F 2 "" H 750 3000 50  0001 C CNN
-F 3 "~" H 750 3000 50  0001 C CNN
-	1    750  3000
+P 750 2500
+F 0 "J?" H 780 2825 50  0000 C CNN
+F 1 "In1.1" H 550 2550 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 750 2500 50  0001 C CNN
+F 3 "~" H 750 2500 50  0001 C CNN
+	1    750  2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:AudioJack2_SwitchT J?
 U 1 1 5C8545CC
-P 750 3400
-F 0 "J?" H 780 3725 50  0000 C CNN
-F 1 "In2" H 550 3500 50  0000 C CNN
-F 2 "" H 750 3400 50  0001 C CNN
-F 3 "~" H 750 3400 50  0001 C CNN
-	1    750  3400
+P 750 2900
+F 0 "J?" H 780 3225 50  0000 C CNN
+F 1 "In1.2" H 550 3000 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 750 2900 50  0001 C CNN
+F 3 "~" H 750 2900 50  0001 C CNN
+	1    750  2900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  3000 1200 3000
+	950  2500 1200 2500
 Wire Wire Line
-	950  3400 1200 3400
+	950  2900 1200 2900
 $Comp
 L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
 U 1 1 5C854A65
@@ -219,7 +143,7 @@ U 1 1 5C854ABA
 P 1350 3800
 F 0 "R?" V 1143 3800 50  0000 C CNN
 F 1 "4k7" V 1234 3800 50  0000 C CNN
-F 2 "" V 1280 3800 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1280 3800 50  0001 C CNN
 F 3 "~" H 1350 3800 50  0001 C CNN
 	1    1350 3800
 	0    1    1    0   
@@ -230,79 +154,52 @@ U 1 1 5C854AC0
 P 750 3800
 F 0 "J?" H 780 4125 50  0000 C CNN
 F 1 "Out1" H 500 3850 50  0000 C CNN
-F 2 "" H 750 3800 50  0001 C CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 750 3800 50  0001 C CNN
 F 3 "~" H 750 3800 50  0001 C CNN
 	1    750  3800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  3800 1200 3800
+	950  3800 1000 3800
 Wire Wire Line
-	950  3900 1100 3900
+	1100 2800 950  2800
 Wire Wire Line
-	1100 3900 1100 4150
+	1100 2800 1100 2600
 Wire Wire Line
-	1100 3900 1100 3500
+	1100 2400 950  2400
+Connection ~ 1100 2800
 Wire Wire Line
-	1100 3300 950  3300
-Connection ~ 1100 3900
+	950  2600 1100 2600
+Connection ~ 1100 2600
 Wire Wire Line
-	1100 3300 1100 3100
+	1100 2600 1100 2400
 Wire Wire Line
-	1100 2900 950  2900
-Connection ~ 1100 3300
+	950  3000 1100 3000
+Connection ~ 1100 3000
 Wire Wire Line
-	950  3100 1100 3100
-Connection ~ 1100 3100
-Wire Wire Line
-	1100 3100 1100 2900
-Wire Wire Line
-	950  3500 1100 3500
-Connection ~ 1100 3500
-Wire Wire Line
-	1100 3500 1100 3300
+	1100 3000 1100 2800
 Text GLabel 1800 3800 2    50   Input ~ 0
-OutNonInv
-Text GLabel 1800 3400 2    50   Input ~ 0
-InNonInv
+Out1
+Text GLabel 1800 2900 2    50   Input ~ 0
+In1
 Wire Wire Line
-	1500 3400 1600 3400
+	1500 2900 1600 2900
 Wire Wire Line
-	1600 3400 1600 3000
+	1600 2900 1600 2500
 Wire Wire Line
-	1600 3000 1500 3000
-Connection ~ 1600 3400
+	1600 2500 1500 2500
+Connection ~ 1600 2900
 Wire Wire Line
-	1600 3400 1800 3400
+	1600 2900 1800 2900
 Wire Wire Line
 	1500 3800 1800 3800
-Text GLabel 4100 3800 0    50   Input ~ 0
-InNonInv
-Wire Wire Line
-	4100 3800 4250 3800
-Text GLabel 5200 3700 2    50   Input ~ 0
-OutNonInv
-Wire Wire Line
-	4950 3700 5200 3700
-Connection ~ 4950 3700
-$Comp
-L Device:R R?
-U 1 1 5C85897D
-P 1350 5150
-F 0 "R?" V 1143 5150 50  0000 C CNN
-F 1 "4k7" V 1234 5150 50  0000 C CNN
-F 2 "" V 1280 5150 50  0001 C CNN
-F 3 "~" H 1350 5150 50  0001 C CNN
-	1    1350 5150
-	0    1    1    0   
-$EndComp
 $Comp
 L Connector:AudioJack2_SwitchT J?
 U 1 1 5C858983
 P 750 4750
 F 0 "J?" H 780 5075 50  0000 C CNN
 F 1 "In1" H 550 4800 50  0000 C CNN
-F 2 "" H 750 4750 50  0001 C CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 750 4750 50  0001 C CNN
 F 3 "~" H 750 4750 50  0001 C CNN
 	1    750  4750
 	1    0    0    -1  
@@ -312,8 +209,8 @@ L Connector:AudioJack2_SwitchT J?
 U 1 1 5C858989
 P 750 5150
 F 0 "J?" H 780 5475 50  0000 C CNN
-F 1 "In2" H 550 5250 50  0000 C CNN
-F 2 "" H 750 5150 50  0001 C CNN
+F 1 "Out2.1" H 550 5250 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 750 5150 50  0001 C CNN
 F 3 "~" H 750 5150 50  0001 C CNN
 	1    750  5150
 	1    0    0    -1  
@@ -325,92 +222,355 @@ Wire Wire Line
 $Comp
 L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
 U 1 1 5C858991
-P 1100 5900
-F 0 "#PWR?" H 1100 5650 50  0001 C CNN
-F 1 "GND" H 1105 5727 50  0000 C CNN
-F 2 "" H 1100 5900 50  0001 C CNN
-F 3 "" H 1100 5900 50  0001 C CNN
-	1    1100 5900
+P 1100 6500
+F 0 "#PWR?" H 1100 6250 50  0001 C CNN
+F 1 "GND" H 1105 6327 50  0000 C CNN
+F 2 "" H 1100 6500 50  0001 C CNN
+F 3 "" H 1100 6500 50  0001 C CNN
+	1    1100 6500
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5C858997
-P 1350 5550
-F 0 "R?" V 1143 5550 50  0000 C CNN
-F 1 "4k7" V 1234 5550 50  0000 C CNN
-F 2 "" V 1280 5550 50  0001 C CNN
-F 3 "~" H 1350 5550 50  0001 C CNN
-	1    1350 5550
-	0    1    1    0   
 $EndComp
 $Comp
 L Connector:AudioJack2_SwitchT J?
 U 1 1 5C85899D
-P 750 5550
-F 0 "J?" H 780 5875 50  0000 C CNN
-F 1 "Out1" H 500 5600 50  0000 C CNN
-F 2 "" H 750 5550 50  0001 C CNN
-F 3 "~" H 750 5550 50  0001 C CNN
-	1    750  5550
+P 750 6150
+F 0 "J?" H 780 6475 50  0000 C CNN
+F 1 "Out2.3" H 500 6200 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 750 6150 50  0001 C CNN
+F 3 "~" H 750 6150 50  0001 C CNN
+	1    750  6150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  5550 1200 5550
-Wire Wire Line
-	950  5650 1100 5650
-Wire Wire Line
-	1100 5650 1100 5900
-Wire Wire Line
-	1100 5650 1100 5250
+	950  6150 1200 6150
 Wire Wire Line
 	1100 5050 950  5050
-Connection ~ 1100 5650
-Wire Wire Line
-	1100 5050 1100 4850
 Wire Wire Line
 	1100 4650 950  4650
 Connection ~ 1100 5050
 Wire Wire Line
-	950  4850 1100 4850
-Connection ~ 1100 4850
-Wire Wire Line
-	1100 4850 1100 4650
-Wire Wire Line
 	950  5250 1100 5250
-Connection ~ 1100 5250
 Wire Wire Line
 	1100 5250 1100 5050
-Text GLabel 1800 5550 2    50   Input ~ 0
-OutInv
+Text GLabel 1800 6150 2    50   Input ~ 0
+Out2
 Text GLabel 1850 4750 2    50   Input ~ 0
-InInv
+In2
 Wire Wire Line
 	1500 5150 1600 5150
 Wire Wire Line
-	1500 5550 1600 5550
+	1500 6150 1600 6150
 Wire Wire Line
 	1500 4750 1850 4750
 Wire Wire Line
-	1600 5150 1600 5550
-Connection ~ 1600 5550
+	1600 5750 1600 6150
+Connection ~ 1600 6150
 Wire Wire Line
-	1600 5550 1800 5550
+	1600 6150 1800 6150
+Wire Wire Line
+	5150 3050 5300 3050
+Text GLabel 5500 3050 2    50   Input ~ 0
+Out1
+Text GLabel 3250 3050 0    50   Input ~ 0
+In1
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5C89C6A4
+P 3600 3050
+F 0 "SW?" H 3600 3335 50  0000 C CNN
+F 1 "Inv/NonInv" H 3600 3244 50  0000 C CNN
+F 2 "" H 3600 3050 50  0001 C CNN
+F 3 "~" H 3600 3050 50  0001 C CNN
+	1    3600 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3150 4300 3150
+Wire Wire Line
+	3800 2950 4300 2950
 $Comp
 L Device:R R?
-U 1 1 5C858977
+U 1 1 5C89DF9F
+P 4850 2400
+F 0 "R?" V 4643 2400 50  0000 C CNN
+F 1 "20k" V 4734 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4780 2400 50  0001 C CNN
+F 3 "~" H 4850 2400 50  0001 C CNN
+	1    4850 2400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 2400 4300 2400
+Wire Wire Line
+	5000 2400 5300 2400
+Wire Wire Line
+	5300 2400 5300 3050
+Connection ~ 5300 3050
+Wire Wire Line
+	5300 3050 5500 3050
+Connection ~ 4300 2950
+Wire Wire Line
+	4300 2950 4550 2950
+Wire Wire Line
+	4300 2400 4700 2400
+Connection ~ 4300 2400
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5C8A23E5
+P 4300 3650
+F 0 "#PWR?" H 4300 3400 50  0001 C CNN
+F 1 "GND" H 4305 3477 50  0000 C CNN
+F 2 "" H 4300 3650 50  0001 C CNN
+F 3 "" H 4300 3650 50  0001 C CNN
+	1    4300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3650 4300 3550
+Wire Wire Line
+	4300 2950 4300 2400
+Wire Wire Line
+	4300 3250 4300 3150
+Connection ~ 4300 3150
+Wire Wire Line
+	4300 3150 4550 3150
+Wire Wire Line
+	3250 3050 3400 3050
+Text GLabel 3100 4950 0    50   Input ~ 0
+In2
+Text GLabel 5200 4950 2    50   Input ~ 0
+Out2
+$Comp
+L Switch:SW_SPDT SW?
+U 1 1 5C8A92C2
+P 3450 4950
+F 0 "SW?" H 3450 5235 50  0000 C CNN
+F 1 "Inv/NonInv" H 3450 5144 50  0000 C CNN
+F 2 "" H 3450 4950 50  0001 C CNN
+F 3 "~" H 3450 4950 50  0001 C CNN
+	1    3450 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 4950 3250 4950
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5C8AA831
+P 3300 4450
+F 0 "#PWR?" H 3300 4200 50  0001 C CNN
+F 1 "GND" H 3305 4277 50  0000 C CNN
+F 2 "" H 3300 4450 50  0001 C CNN
+F 3 "" H 3300 4450 50  0001 C CNN
+	1    3300 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4450 3400 4450
+Wire Wire Line
+	3700 4450 4150 4450
+Wire Wire Line
+	3650 4850 4150 4850
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5C8AE4ED
+P 4150 5550
+F 0 "#PWR?" H 4150 5300 50  0001 C CNN
+F 1 "GND" H 4155 5377 50  0000 C CNN
+F 2 "" H 4150 5550 50  0001 C CNN
+F 3 "" H 4150 5550 50  0001 C CNN
+	1    4150 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 5550 4150 5450
+Wire Wire Line
+	4150 5150 4150 5050
+Connection ~ 4150 5050
+Wire Wire Line
+	4150 5050 4250 5050
+Wire Wire Line
+	3650 5050 4150 5050
+Wire Wire Line
+	4850 4950 4950 4950
+Wire Wire Line
+	4150 4450 4400 4450
+Connection ~ 4150 4450
+Wire Wire Line
+	4950 4450 4950 4950
+Connection ~ 4950 4950
+Wire Wire Line
+	4950 4950 5200 4950
+Wire Wire Line
+	1100 5850 1100 6500
+Wire Wire Line
+	1100 4650 1100 5050
+Wire Wire Line
+	1000 3800 1000 4850
+Wire Wire Line
+	1000 4850 950  4850
+Connection ~ 1000 3800
+Wire Wire Line
+	1000 3800 1200 3800
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5C8B73F0
+P 750 3350
+F 0 "J?" H 780 3675 50  0000 C CNN
+F 1 "In1.3" H 550 3450 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 750 3350 50  0001 C CNN
+F 3 "~" H 750 3350 50  0001 C CNN
+	1    750  3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	950  3350 1200 3350
+Wire Wire Line
+	950  3450 1100 3450
+Connection ~ 1100 3250
+Wire Wire Line
+	1100 3250 1100 3450
+Connection ~ 1100 3450
+Wire Wire Line
+	1100 3000 1100 3250
+Wire Wire Line
+	950  3250 1100 3250
+Wire Wire Line
+	1500 3350 1600 3350
+Wire Wire Line
+	1600 3350 1600 2900
+Wire Wire Line
+	1100 3450 1100 3700
+Wire Wire Line
+	950  3700 1100 3700
+Connection ~ 1100 3700
+Wire Wire Line
+	1100 3700 1100 4150
+$Comp
+L Device:R R?
+U 1 1 5C8BFDED
+P 1350 3350
+F 0 "R?" V 1143 3350 50  0000 C CNN
+F 1 "47k" V 1234 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1280 3350 50  0001 C CNN
+F 3 "~" H 1350 3350 50  0001 C CNN
+	1    1350 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C8BFEBC
+P 3700 2400
+F 0 "R?" V 3493 2400 50  0000 C CNN
+F 1 "47k" V 3584 2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3630 2400 50  0001 C CNN
+F 3 "~" H 3700 2400 50  0001 C CNN
+	1    3700 2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C8BFF8A
+P 3550 4450
+F 0 "R?" V 3343 4450 50  0000 C CNN
+F 1 "47k" V 3434 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3480 4450 50  0001 C CNN
+F 3 "~" H 3550 4450 50  0001 C CNN
+	1    3550 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C8C0008
 P 1350 4750
 F 0 "R?" V 1143 4750 50  0000 C CNN
-F 1 "20k" V 1234 4750 50  0000 C CNN
-F 2 "" V 1280 4750 50  0001 C CNN
+F 1 "47k" V 1234 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1280 4750 50  0001 C CNN
 F 3 "~" H 1350 4750 50  0001 C CNN
 	1    1350 4750
 	0    1    1    0   
 $EndComp
-Text GLabel 3750 4850 0    50   Input ~ 0
-InInv
+$Comp
+L Device:R R?
+U 1 1 5C8C0060
+P 4150 5300
+F 0 "R?" V 3943 5300 50  0000 C CNN
+F 1 "47k" V 4034 5300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4080 5300 50  0001 C CNN
+F 3 "~" H 4150 5300 50  0001 C CNN
+	1    4150 5300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C8C010C
+P 4300 3400
+F 0 "R?" V 4093 3400 50  0000 C CNN
+F 1 "47k" V 4184 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4230 3400 50  0001 C CNN
+F 3 "~" H 4300 3400 50  0001 C CNN
+	1    4300 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C8C0289
+P 1350 5150
+F 0 "R?" V 1143 5150 50  0000 C CNN
+F 1 "4k7" V 1234 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1280 5150 50  0001 C CNN
+F 3 "~" H 1350 5150 50  0001 C CNN
+	1    1350 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C8C02F7
+P 1350 6150
+F 0 "R?" V 1143 6150 50  0000 C CNN
+F 1 "4k7" V 1234 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1280 6150 50  0001 C CNN
+F 3 "~" H 1350 6150 50  0001 C CNN
+	1    1350 6150
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5C8C1C4C
+P 750 5750
+F 0 "J?" H 780 6075 50  0000 C CNN
+F 1 "Out2.2" H 550 5850 50  0000 C CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 750 5750 50  0001 C CNN
+F 3 "~" H 750 5750 50  0001 C CNN
+	1    750  5750
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3750 4850 4150 4850
-Text GLabel 5000 4950 2    50   Input ~ 0
-OutInv
+	950  5750 1200 5750
+Wire Wire Line
+	1100 5650 950  5650
+Connection ~ 1100 5650
+Wire Wire Line
+	950  5850 1100 5850
+Wire Wire Line
+	1100 5850 1100 5650
+Wire Wire Line
+	1500 5750 1600 5750
+Wire Wire Line
+	1100 5250 1100 5650
+$Comp
+L Device:R R?
+U 1 1 5C8C1C59
+P 1350 5750
+F 0 "R?" V 1143 5750 50  0000 C CNN
+F 1 "4k7" V 1234 5750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1280 5750 50  0001 C CNN
+F 3 "~" H 1350 5750 50  0001 C CNN
+	1    1350 5750
+	0    1    1    0   
+$EndComp
+Connection ~ 1100 5250
+Connection ~ 1100 5850
+Wire Wire Line
+	1600 5750 1600 5150
+Connection ~ 1600 5750
 $EndSCHEMATC
