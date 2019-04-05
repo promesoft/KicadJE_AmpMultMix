@@ -2,7 +2,7 @@
 KicadJE_AmpMultMix
 
 # Purpose
-
+NOTE - INITIALLY THE PROJECT "KiCadJE_LFO_1" will do the validation of the initial design of the MMX
 # Status - Preliminary SCH/PCB
 ## Initial 
 | Stage  | Detail | Status |
