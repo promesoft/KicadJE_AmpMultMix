@@ -1,7 +1,7 @@
 # Johansen Engineering KicadJE_AmpMultMix
 KicadJE_AmpMultMix
 
-!(MMX_2019_03_16.JPG)[MMX_2019_03_16.JPG]
+![](MMX_2019_03_16.JPG)
 
 # Purpose
 NOTE - INITIALLY THE PROJECT "KiCadJE_LFO_1" will do the validation of the initial design of the MMX
