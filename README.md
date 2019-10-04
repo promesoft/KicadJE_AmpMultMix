@@ -1,5 +1,5 @@
 # Johansen Engineering KicadJE_AmpMultMix
-KicadJE_AmpMultMix
+KicadJE_AmpMultMix - INCOMPLETE
 
 ![](MMX_2019_03_16.JPG)
 
